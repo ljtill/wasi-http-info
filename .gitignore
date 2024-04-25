@@ -1,0 +1,15 @@
+# Cargo generated files
+debug/
+target/
+
+# Cargo lock file
+Cargo.lock
+
+# VS Code files
+.vscode/
+
+# WIT dependency lock
+deps.lock
+
+# WIT dependency files
+deps/
