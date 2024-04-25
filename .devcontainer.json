@@ -1,0 +1,15 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/base:jammy",
+    "features": {
+        "ghcr.io/devcontainers/features/rust:latest": {},
+        "ghcr.io/ljtill/features/wasm-tools:latest": {},
+        "ghcr.io/ljtill/features/wit-deps:latest": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bytecodealliance.wit-idl"
+            ]
+        }
+    }
+}
