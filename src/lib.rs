@@ -2,8 +2,9 @@
 mod bindings;
 mod routes;
 
-use crate::bindings::{exports::wasi::http::incoming_handler::Guest, wasi::http::types::*};
 use bindings::wasi::http::types;
+
+use crate::bindings::{exports::wasi::http::incoming_handler::Guest, wasi::http::types::*};
 
 impl PartialEq for types::Method {
     fn eq(&self, other: &Self) -> bool {
@@ -16,13 +17,6 @@ impl PartialEq for types::Method {
 
 fn new_response(response_out: ResponseOutparam, status_code: StatusCode, content: String) {
     let headers = Fields::new();
-    headers
-        .set(
-            &"Content-Type".to_string(),
-            &["application/json".as_bytes().to_vec()],
-        )
-        .unwrap();
-
     let response = OutgoingResponse::new(headers);
     let body = response.body().expect("Outgoing response");
 
