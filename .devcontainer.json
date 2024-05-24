@@ -8,7 +8,8 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "bytecodealliance.wit-idl"
+                "bytecodealliance.wit-idl",
+                "ms-vscode.makefile-tools"
             ]
         }
     },
