@@ -3,6 +3,11 @@ build:
 	@echo "Building..."
 	@cargo component build --target wasm32-wasi
 
+.PHONY: clean
+clean:
+	@echo "Cleaning..."
+	@cargo component clean
+
 .PHONY: update
 update:
 	@echo "Updating..."
