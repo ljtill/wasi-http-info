@@ -12,6 +12,5 @@
                 "ms-vscode.makefile-tools"
             ]
         }
-    },
-    "postCreateCommand": "bash install.sh"
+    }
 }
